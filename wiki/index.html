@@ -2,58 +2,48 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8">
+    <div class="header">
     <title>꼬미위키</title>
   </head>
-   <style>
-    @font-face {
-      font-family: 'MaplestoryOTFBold';
-      src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
+<style>
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  .header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px 0;
+  }
+  .header img {
+    max-width: 100%;
+    height: auto;
+  }
+      body {
+      font-family: 'MaplestoryOTFBold', sans-serif; /* 기본 폰트를 MaplestoryOTFBold로 설정 */
     }
-
-    body {
-      font-family: 'MaplestoryOTFBold', sans-serif; /* 폰트 설정 */
-      margin: 0; /* 기본 여백 제거 */
-      padding: 0; /* 기본 패딩 제거 */
-      background-color: #f4f4f4; /* 배경색 */
-      display: flex;
-      justify-content: center; /* 가로 중앙 정렬 */
-    }
-
-    .header {
-      position: absolute;
-      top: 10px; /* 화면 상단에서 약간 아래 */
-      text-align: center; /* 텍스트 가운데 정렬 */
-      width: 100%; /* 화면 전체 너비 */
-      color: #333; /* 글자 색상 */
-    }
-
-    .header h1 {
-      font-size: 24px; /* 기본 글자 크기 */
-      margin: 0; /* 기본 마진 제거 */
-      padding: 0;
-    }
-
-    .header p {
-      font-size: 16px; /* 설명 텍스트 크기 */
-      margin: 5px 0 0; /* 위쪽 약간의 여백 */
-    }
-
-    /* 반응형: 모바일 화면에서 텍스트 크기 조정 */
-    @media (max-width: 768px) {
-      .header h1 {
-        font-size: 20px; /* 모바일용 제목 크기 */
-      }
-
-      .header p {
-        font-size: 14px; /* 모바일용 설명 크기 */
-      }
-    }
-  </style>
+.outline {
+    font-size: 48px; /* 텍스트 크기 */
+    font-weight: bold; /* 텍스트 굵기 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    color: white; /* 글자 색상 */
+    text-shadow: 
+        -3px -3px 0 black, /* 왼쪽 위 */
+         3px -3px 0 black, /* 오른쪽 위 */
+        -3px  3px 0 black, /* 왼쪽 아래 */
+         3px  3px 0 black; /* 오른쪽 아래 */
+}
+</style>
   <body>
-    <h1>꼬미위키</h1>
+    <h1 class="outline">꼬미위키</h1>
     <h2>꼬미위키는 꼬미포카에 대한 정보<br>
     를 알 수 있는 곳입니다.</h2>
+    <h1>문서 목록</h1>
+    </div>
   </body>
 </html>
