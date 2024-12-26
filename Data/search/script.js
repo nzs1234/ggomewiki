@@ -1,7 +1,11 @@
-const button = document.getElementById('myButton');
-const result = document.getElementById('result');
+const searchForm = document.querySelector('form');
+const searchButton = document.getElementById('searchButton'); // 버튼 요소 선택
 
-button.addEventListener('click', () => {
-    // 버튼 클릭 시 실행될 코드
-    result.textContent = '버튼이 클릭되었습니다!';
+searchButton.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const searchTerm = document.getElementById('searchInput').value; // 검색어 입력 필드에서 값 가져오기
+    const newUrl = `http://${searchTerm}.ggomewiki.kro.kr`;
+
+    window.location.href = newUrl;
 });
