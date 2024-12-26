@@ -1,11 +1,9 @@
 const searchForm = document.querySelector('form');
-const searchButton = document.getElementById('searchButton'); // 버튼 요소 선택
+const searchButton = document.getElementById('searchButton');
 
 searchButton.addEventListener('click', (event) => {
-    event.preventDefault();
-
-    const searchTerm = document.getElementById('searchInput').value; // 검색어 입력 필드에서 값 가져오기
+    event.preventDefault(); // 페이지 새로고침 방지
+    const searchTerm = document.getElementById('searchInput').value;
     const newUrl = `http://${searchTerm}.ggomewiki.kro.kr`;
-
-    window.location.href = newUrl;
+    window.location.href = newUrl; // 입력된 검색어로 URL 이동
 });
